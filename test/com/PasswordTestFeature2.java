@@ -11,7 +11,7 @@ public class PasswordTestFeature2 {
 		PasswordValidation pv = new PasswordValidation();
 		String password = "Abcd";
 		try {
-			rank = pv.isValid(password,true);
+			rank = pv.isValid(password,true).charAt(0);
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}
@@ -24,7 +24,7 @@ public class PasswordTestFeature2 {
 		//Case 1.2
 		password = null;
 		try {
-			rank = pv.isValid(password,true);
+			rank = pv.isValid(password,true).charAt(0);
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}
@@ -37,7 +37,7 @@ public class PasswordTestFeature2 {
 		//Case 1.3
 		password = "abcde";
 		try {
-			rank = pv.isValid(password,true);
+			rank = pv.isValid(password,true).charAt(0);
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}
@@ -50,7 +50,7 @@ public class PasswordTestFeature2 {
 		//Case 1.4
 		password = "ABCDEFGHIJK";
 		try {
-			rank = pv.isValid(password,true);
+			rank = pv.isValid(password,true).charAt(0);
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}		
@@ -63,7 +63,7 @@ public class PasswordTestFeature2 {
 		//Case 1.5
 		password = "AbcdEFGSFGHHFS";
 		try {
-			rank = pv.isValid(password,true);
+			rank = pv.isValid(password,true).charAt(0);
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}
@@ -75,7 +75,7 @@ public class PasswordTestFeature2 {
 
 		password = "Abcdefgh1";
 		try {
-			rank = pv.isValid(password,true);
+			rank = pv.isValid(password,true).charAt(0);
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}

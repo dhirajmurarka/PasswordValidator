@@ -2,9 +2,10 @@ package com;
 
 public class PasswordValidation {
 
-	public static int isValid(String password, boolean appplyFeature2) throws InvalidPasswordException
+	public static String isValid(String password, boolean appplyFeature2) throws InvalidPasswordException
 	{
 		int rank = 5;
+		boolean feature3failed = false;
 		if (password == null)
 		{
 			if(appplyFeature2)
@@ -53,6 +54,7 @@ public class PasswordValidation {
 			}
 		}
 		if (count == 0) {
+			feature3failed = true;
 			if(appplyFeature2)
 			{
 				rank--;
@@ -79,7 +81,13 @@ public class PasswordValidation {
 				throw new InvalidPasswordException(5);
 			}
 		}
-		return rank;
+		
+		if (feature3failed) {
+			return rank + "0";
+		} else {
+			return rank + "1";
+		}
+		
 	}
 
 	public static void main(String[] args) {
