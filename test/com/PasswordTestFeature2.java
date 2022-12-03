@@ -6,7 +6,7 @@ public class PasswordTestFeature2 {
 
 	public static void main(String[] args) {
 		
-		int rank=5;
+		char rank=5;
 		//Case 1.1
 		PasswordValidation pv = new PasswordValidation();
 		String password = "Abcd";
@@ -15,7 +15,7 @@ public class PasswordTestFeature2 {
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}
-		if (rank >= 3) {
+		if (rank >= '3') {
 			System.out.println("Password is OK for 2nd feature for input " + password );
 		} else {
 			System.out.println("Password is not OK for 2nd feature for input " + password);
@@ -28,7 +28,7 @@ public class PasswordTestFeature2 {
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}
-		if (rank >= 3) {
+		if (rank >= '3') {
 			System.out.println("Password is OK for 2nd feature for input " + password );
 		} else {
 			System.out.println("Password is not OK for 2nd feature for input " + password);
@@ -41,7 +41,7 @@ public class PasswordTestFeature2 {
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}
-		if (rank >= 3) {
+		if (rank >= '3') {
 			System.out.println("Password is OK for 2nd feature for input " + password );
 		} else {
 			System.out.println("Password is not OK for 2nd feature for input " + password);
@@ -54,7 +54,7 @@ public class PasswordTestFeature2 {
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}		
-		if (rank >= 3) {
+		if (rank >= '3') {
 			System.out.println("Password is OK for 2nd feature for input " + password );
 		} else {
 			System.out.println("Password is not OK for 2nd feature for input " + password);
@@ -67,7 +67,7 @@ public class PasswordTestFeature2 {
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}
-		if (rank >= 3) {
+		if (rank >= '3') {
 			System.out.println("Password is OK for 2nd feature for input " + password );
 		} else {
 			System.out.println("Password is not OK for 2nd feature for input " + password);
@@ -79,7 +79,7 @@ public class PasswordTestFeature2 {
 		} catch (InvalidPasswordException e) {
 			System.out.println(e.printMessage());
 		}
-		if (rank >= 3) {
+		if (rank >= '3') {
 			System.out.println("Password is OK for 2nd feature for input " + password );
 		} else {
 			System.out.println("Password is not OK for 2nd feature for input " + password);
