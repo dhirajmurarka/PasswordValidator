@@ -39,7 +39,7 @@ public class PasswordValidation {
 			}
 		}
 		if (count == 0) {
-			throw new InvalidPasswordException(3);
+			throw new InvalidPasswordException(5);
 		}
 
 	}
